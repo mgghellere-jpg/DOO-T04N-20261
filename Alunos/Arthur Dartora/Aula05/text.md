@@ -6,7 +6,7 @@ Na programação, temos duas formas de resolver problemas, comumente conhecidos 
 
 ## Paradigma imperativo
 
-O paradigma imperativo é descrever **passo a passo* de como um programa deve realizar uma tarefa. Nele o programador controla a execução, usando por exemplo variáveis, loops e condicionais.
+O paradigma imperativo é descrever **passo a passo** de como um programa deve realizar uma tarefa. Nele o programador controla a execução, usando por exemplo variáveis, loops e condicionais.
 
 A linguagem **Java** é um exemplo de paradigma imperativo:
 
@@ -22,19 +22,21 @@ System.out.println(soma);
 
 Enquanto isso, o paradigma declarativo é **descrever o que deve ser feito**, sem muitos detalhes de como vai ser executado.
 
-O **Python**, apesar de ser uma linguagem multi-paradigma, pode ser utilizado em um estilo mais declarativo ao focar no resultado desejado com funções prontas, sem detalhar explicitamente cada passo da execução:
+O **Prolog** é um exemplo clássico de linguagem declarativa, pois trabalha com regras e relações lógicas:
 
-```py
-soma = sum(range(1, 6))
-print(soma)
-```
+soma(0, 0).
+soma(N, Resultado) :-
+    N > 0,
+    N1 is N - 1,
+    soma(N1, Parcial),
+    Resultado is N + Parcial.
 
 ## Comparação entre os codigos
 
 Ambos calculam a soma de valores
 
 **-Java**: define o passo a passo com um laço de repetição
-**-Python**: usa função pronta, focando no resultado.
+**-Prolog**: define regras matemáticas e deixa o mecanismo da linguagem resolver
 
 ## Conclusão
 
