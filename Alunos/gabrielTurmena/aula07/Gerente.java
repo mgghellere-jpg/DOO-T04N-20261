@@ -6,7 +6,12 @@ public class Gerente extends Pessoa{
     double[] salarioRecebido;
 	
     public Gerente(String nome, int idade, String loja, String cidade, String bairro, String rua, double salarioBase) {
-
+        this.nome = nome;
+        this.idade = idade;
+        this.loja = loja;
+        this.cidade = cidade;
+        this.bairro = bairro;
+        this.rua = rua;
         this.salarioBase = salarioBase;
         this.salarioRecebido = new double[]{12000.00, 25000.50, 7500.75};
     }

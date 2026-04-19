@@ -6,7 +6,7 @@ public class ProcessaPedido{
 
 	  public void processar(Pedido pedido) {
 
-	        pedido.calcularValorTotal();
+	        pedido.total = pedido.calcularValorTotal();
 
 	        
 	        if (confirmarPagamento(pedido)) {

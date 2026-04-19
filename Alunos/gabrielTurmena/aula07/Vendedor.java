@@ -7,7 +7,12 @@ public class Vendedor extends Pessoa{
     double[] salarioRecebido;
  
     public Vendedor(String nome, int idade, String loja, String cidade, String bairro, String rua, double salarioBase) {
-
+        this.nome = nome;
+        this.idade = idade;
+        this.loja = loja;
+        this.cidade = cidade;
+        this.bairro = bairro;
+        this.rua = rua;
         this.salarioBase = salarioBase;
         this.salarioRecebido = new double[]{4200.00, 3980.50, 4500.75};
     }

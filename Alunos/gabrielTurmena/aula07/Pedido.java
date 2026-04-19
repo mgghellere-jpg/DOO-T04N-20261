@@ -32,11 +32,11 @@ public class Pedido {
         itens.add(item);
     }
     public Double calcularValorTotal() {
-    	double total = 0.0;
-    	for (Item item :itens) {
-    		total += item.valor;
-    	}
-		return total;
+        this.total = 0.0;
+        for (Item item : itens) {
+            this.total += item.valor;
+        }
+        return this.total;
     }
     
     public void gerarDescricaoVenda() {

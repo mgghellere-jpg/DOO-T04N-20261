@@ -37,7 +37,7 @@ public static void main(String[] args) {
     processador.processar(pedido);
 	Scanner sc = new Scanner(System.in);
 	int resposta = 0;
-	while(resposta!= 7) {
+	while(resposta != 10) {
 		System.out.println(" \nSeja bem vindo a Venda da Dona Gabriela!");
 		
 		System.out.println("\nPARA:");
